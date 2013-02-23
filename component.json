@@ -1,12 +1,12 @@
 {
-    "name": "oo-css",
+    "name": "underwear.css",
     "version": "0.1.0",
     "author": "Chen Zihui <hello@chenzihui.com>",
-    "homepage": "https://github.com/chenzihui/oo.css/",
-    "styles": ["oo.css"],
+    "homepage": "https://github.com/chenzihui/underwear.css/",
+    "styles": ["underwear.css"],
     "respository": {
         "type": "git",
-        "url": "https://github.com/chenzihui/oo.css.git"
+        "url": "https://github.com/chenzihui/underwear.css.git"
     },
     "licenses": [{
         "type": "MIT",

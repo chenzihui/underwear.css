@@ -25,7 +25,6 @@ And so, after reading on the "Vanilla Web Diet" as proposed by [@codepo8](http:/
 - Buttons
 - Lists
 - Forms
-- Modal Dialogs
 - Generic Helpers
 
 ## How do I use it?
