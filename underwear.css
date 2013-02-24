@@ -330,6 +330,22 @@ a {
   text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
 
+.btn-small {
+  line-height: 2;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.btn-large {
+  line-height: 3;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.btn-full {
+  width: 100%;
+}
+
 .btn:hover {
   box-shadow: 0 1px 3px rgba(0,0,0,.1);
   text-decoration: none;
