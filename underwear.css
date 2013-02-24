@@ -325,9 +325,9 @@ a {
   display: inline-block;
   font-family: inherit;
   font-size: 100%;
-  line-height: 2.5;
-  padding-left: .75em;
-  padding-right: .75em;
+  line-height: 2.45;
+  padding: 0 .725em;
+  text-align: center;
   text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
 
