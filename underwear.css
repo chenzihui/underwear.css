@@ -78,6 +78,14 @@ body {
   text-align: center;
 }
 
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
 /* ------------------------------ *\
    Links
 \* ------------------------------ */
@@ -113,6 +121,12 @@ a {
    The Grid
 \* ------------------------------ */
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+}
+
 /**
  * Represents a single row in the grid.
  * Remember to tack on `.group` to clear the floats made by the columns.
@@ -127,51 +141,51 @@ a {
   margin-left: 20px;
 }
 
-.1-column {
+.column-1 {
   width: 60px;
 }
 
-.2-column {
+.column-2 {
   width: 140px;
 }
 
-.3-column {
+.column-3 {
   width: 220px;
 }
 
-.4-column {
+.column-4 {
   width: 300px;
 }
 
-.5-column {
+.column-5 {
   width: 380px;
 }
 
-.6-column {
+.column-6 {
   width: 460px;
 }
 
-.7-column {
+.column-7 {
   width: 540px;
 }
 
-.8-column {
+.column-8 {
   width: 620px;
 }
 
-.9-column {
+.column-9 {
   width: 700px;
 }
 
-.10-column {
+.column-10 {
   width: 780px;
 }
 
-.11-column {
+.column-11 {
   width: 860px;
 }
 
-.12-column {
+.column-12 {
   width: 940px;
 }
 
@@ -196,10 +210,6 @@ a {
 
 .media .bd {
   overflow: hidden;
-}
-
-.media .bd-reverse {
-  float: right;
 }
 
 .media .img-ext {
