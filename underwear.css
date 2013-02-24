@@ -113,6 +113,10 @@ a {
   min-height: 100%;
 }
 
+.push {
+  height: 60px; /* Same height as your footer. Adjust accordingly. */
+}
+
 .box {
   border: 1px solid #ddd;
 }
