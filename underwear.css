@@ -136,7 +136,7 @@ a {
   margin-left: -20px;
 }
 
-[class$="-column"] {
+[class*="column"] {
   float: left;
   margin-left: 20px;
 }
@@ -313,7 +313,9 @@ a {
    Lists
 \* ------------------------------ */
 
-.inline-list {}
+.inline-list {
+  list-style-type: none;
+}
 
 .inline-list > li {
   float: left;
