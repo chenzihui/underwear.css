@@ -319,13 +319,12 @@ a {
 
 .inline-list > li {
   float: left;
-  margin-left: 1em;
   margin-right: 1em;
   width: auto;
 }
 
-.inline-list > li:first-child {
-  margin-left: 0;
+.inline-list > li:last-child {
+  margin-right: 0;
 }
 
 .inline-list.pipe > li:after {
