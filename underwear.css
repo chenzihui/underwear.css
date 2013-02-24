@@ -284,6 +284,11 @@ a {
   padding: 8px 5px;
 }
 
+.user-input:focus {
+  border: 1px solid #09a5e3;
+  outline: none;
+}
+
 .form-horizontal .user-input,
 .form-horizontal label {
   float: left;
