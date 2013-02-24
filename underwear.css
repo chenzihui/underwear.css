@@ -121,6 +121,14 @@ a {
   border: 1px solid #ddd;
 }
 
+.underline {
+  border-bottom: 1px solid #ddd;
+}
+
+.underline-dashed {
+  border-bottom: 1px dashed #ddd;
+}
+
 /* ------------------------------ *\
    The Grid
 \* ------------------------------ */
