@@ -311,14 +311,16 @@ a {
 \* ------------------------------ */
 
 .btn {
-  color: #fff;
+  background-color: #eee;
+  border: 1px solid #ddd;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
   font-size: 100%;
-  line-height: 3;
-  padding-left: 1em;
-  padding-right: 1em;
+  line-height: 2.5;
+  padding-left: .75em;
+  padding-right: .75em;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
 
 /* ------------------------------ *\
