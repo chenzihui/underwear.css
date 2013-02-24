@@ -366,6 +366,10 @@ a {
   width: auto;
 }
 
+.inline-list > li > a {
+  float: left;
+}
+
 .inline-list > li:last-child {
   margin-right: 0;
 }
