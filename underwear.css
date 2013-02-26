@@ -292,25 +292,25 @@ a {
   outline: none;
 }
 
-.form-horizontal .user-input,
-.form-horizontal label {
+.form-horizontal__input,
+.form-horizontal__label {
   float: left;
 }
 
-.form-horizontal .user-input {
+.form-horizontal__input {
   margin-left: 10px;
 }
 
-.form-horizontal label {
+.form-horizontal__label {
   text-align: right;
 }
 
-.form-stack label,
-.form-stack .user-input {
+.form-stack__label,
+.form-stack__input {
   display: block;
 }
 
-.form-stack label {
+.form-stack__label {
   margin-bottom: 3px;
 }
 
@@ -331,19 +331,19 @@ a {
   text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
 
-.btn-small {
+.btn--small {
   line-height: 2;
   padding-left: .5em;
   padding-right: .5em;
 }
 
-.btn-large {
+.btn--large {
   line-height: 3;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.btn-full {
+.btn--full {
   width: 100%;
 }
 
@@ -360,13 +360,13 @@ a {
   list-style-type: none;
 }
 
-.inline-list > li {
+.inline-list__item {
   float: left;
   margin-right: 1em;
   width: auto;
 }
 
-.inline-list > li > a {
+.inline-list__item__content {
   float: left;
 }
 
@@ -374,12 +374,12 @@ a {
   margin-right: 0;
 }
 
-.inline-list.pipe > li:after {
+.inline-list--pipe__item:after {
   content: "|";
   margin-left: 1em;
 }
 
-.inline-list.pipe > li:last-child:after {
+.inline-list--pipe > li:last-child:after {
   content: "";
 }
 
