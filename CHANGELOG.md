@@ -1,5 +1,8 @@
 == HEAD
 
+== 0.1.2 (1st March 2013)
+- Add offset for columns
+
 == 0.1.1 (27th Februrary 2013)
 - BEM naming convention
 
