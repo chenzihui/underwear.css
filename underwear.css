@@ -372,7 +372,7 @@ input[type="radio"] {
   width: auto;
 }
 
-.inline-list__item__content {
+.inline-list__content {
   float: left;
 }
 
@@ -380,7 +380,7 @@ input[type="radio"] {
   margin-right: 0;
 }
 
-.inline-list--pipe__item:after {
+.inline-list__item--pipe:after {
   content: "|";
   margin-left: 1em;
 }
