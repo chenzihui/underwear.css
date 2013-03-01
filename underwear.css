@@ -17,7 +17,7 @@ body {
   color: #333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.4;
 }
 
 /**
@@ -236,11 +236,19 @@ a {
    Typography
 \* ------------------------------ */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; /* Remove default browser margins */
+}
+
 /**
  * Based on a Modular Scale using 14px and 44px as the key values
  * http://modularscale.com/scale/?px1=14&px2=44&ra1=1.618&ra2=0
  *
- * Add in `line-height` if you are aiming for a baseline rhythm.
  **/
 
 .ms1 {
