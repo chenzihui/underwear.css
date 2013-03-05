@@ -1,5 +1,8 @@
 == HEAD
 
+== 0.1.3 (5th March 2013)
+- Add fluid grids
+
 == 0.1.2 (1st March 2013)
 - Add offset for columns
 
