@@ -412,6 +412,7 @@ input[type="radio"] {
 
 .inline-list {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .inline-list li {
