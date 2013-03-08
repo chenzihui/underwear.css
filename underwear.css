@@ -414,13 +414,13 @@ input[type="radio"] {
   list-style-type: none;
 }
 
-.inline-list__item {
+.inline-list li {
   float: left;
   margin-right: 1em;
   width: auto;
 }
 
-.inline-list__content {
+.inline-list__item { /* E.g. <li><a class="inline-list__item" href="#">Example</a></li> */
   float: left;
 }
 
@@ -428,7 +428,7 @@ input[type="radio"] {
   margin-right: 0;
 }
 
-.inline-list__item--pipe:after {
+.inline-list--pipe li:after {
   content: "|";
   margin-left: 1em;
 }
