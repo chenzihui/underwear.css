@@ -341,30 +341,38 @@ input[type="radio"] {
   padding: 8px 5px;
 }
 
+.user-input--large {
+  width: 200px;
+}
+
+.user-input--xlarge {
+  width: 300px;
+}
+
 .user-input:focus {
   border: 1px solid #09a5e3;
   outline: none;
 }
 
-.form-horizontal__input,
-.form-horizontal__label {
+.form-horizontal input,
+.form-horizontal label {
   float: left;
 }
 
-.form-horizontal__input {
+.form-horizontal input {
   margin-left: 10px;
 }
 
-.form-horizontal__label {
+.form-horizontal label {
   text-align: right;
 }
 
-.form-stack__label,
-.form-stack__input {
+.form-stack label,
+.form-stack input {
   display: block;
 }
 
-.form-stack__label {
+.form-stack label {
   margin-bottom: 3px;
 }
 
