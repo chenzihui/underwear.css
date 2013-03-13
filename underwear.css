@@ -418,31 +418,31 @@ input[type="radio"] {
    Lists
 \* ------------------------------ */
 
-.inline-list {
+.list {
   list-style-type: none;
   padding-left: 0;
 }
 
-.inline-list li {
+.list--inline li {
   float: left;
   margin-right: 1em;
   width: auto;
 }
 
-.inline-list__item { /* E.g. <li><a class="inline-list__item" href="#">Example</a></li> */
+.list--inline__item { /* E.g. <li><a class="inline-list__item" href="#">Example</a></li> */
   float: left;
 }
 
-.inline-list > li:last-child {
+.list--inline__item > li:last-child {
   margin-right: 0;
 }
 
-.inline-list--pipe li:after {
+.list--inline--pipe li:after {
   content: "|";
   margin-left: 1em;
 }
 
-.inline-list--pipe > li:last-child:after {
+.list--inline--pipe > li:last-child:after {
   content: "";
 }
 
