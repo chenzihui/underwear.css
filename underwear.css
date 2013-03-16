@@ -104,8 +104,22 @@ a {
 \* ------------------------------ */
 
 /**
- * For use with a sticky footer
- * To be used along with `.center-block`
+ * For use with a sticky footer. E.g.
+ *
+ * <div class="wrapper">
+ *     <header>
+ *         <!-- Site header -->
+ *     </header>
+ *
+ *     <!-- Site content -->
+ *
+ *     <div class="push"></div>
+ * </div>
+ *
+ * <footer>
+ *     <!-- Footer here -->
+ * </footer>
+ *
  **/
 
 .wrapper {
@@ -118,6 +132,17 @@ a {
 .push {
   height: 60px; /* Same height as your footer. Adjust accordingly. */
 }
+
+/**
+ * For content blocks that needs to be boxed off. E.g.
+ *
+ * <section class="box">
+ *     <h1>Sidebar Information</h1>
+ *
+ *     <p>Some information that is boxed off.</p>
+ * </section>
+ *
+ **/
 
 .box {
   border: 1px solid #ddd;
@@ -136,18 +161,37 @@ a {
    The Grid
 \* ------------------------------ */
 
+/**
+ * A non-float grid system based on inline block child elements.
+ *
+ * <div class="grid">
+ *     <div class="column one-third">
+ *     </div>
+ *
+ *     <div class="column two-third">
+ *     </div>
+ * </div>
+ *
+ **/
+
 .grid {
-  letter-spacing: -0.31em;
+  letter-spacing: -0.31em; /* This is to collapse the white space between inline block elements */
   margin-left: auto;
   margin-right: auto;
-  width: 940px;
+  width: 940px; /* Adjust according to your needs */
 }
 
 .column {
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
+  letter-spacing: normal;
+  padding: 0 10px; /* Gutter size */
+  vertical-align: top;
+  word-spacing: normal;
 }
+
+/**
+ * Thirds
+ **/
 
 .one-third {
   width: 33.333333%;
@@ -155,6 +199,10 @@ a {
 .two-third {
   width: 66.666666%;
 }
+
+/**
+ * Forths
+ **/
 
 .one-forth {
   width: 25%;
@@ -165,6 +213,10 @@ a {
 .three-forth {
   width: 75%;
 }
+
+/**
+ * Fifths
+ **/
 
 .one-fifth {
   width: 20%;
@@ -178,6 +230,10 @@ a {
 .four-fifth {
   width: 80%;
 }
+
+/**
+ * Tenths
+ **/
 
 .one-tenth {
   width: 10%;
@@ -206,6 +262,10 @@ a {
 .nine-tenth {
   width: 90%;
 }
+
+/**
+ * Twelfths
+ **/
 
 .one-twelfth {
   width: 8.333333%;
@@ -246,6 +306,18 @@ a {
 \* ------------------------------ */
 
 /**
+ * E.g.
+ *
+ * <div class="media group">
+ *     <a class="img" href="to/somewhere">
+ *         <img src="something.jpg" alt="some image maybe">
+ *     </a>
+ *
+ *     <div class="bd">
+ *         <p>Something about the image</p>
+ *     </div>
+ * </div>
+ *
  * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
  **/
 
@@ -276,7 +348,6 @@ h4,
 h5,
 h6,
 p {
-  letter-spacing: 0;
   margin: 0;
 }
 
@@ -288,7 +359,6 @@ p {
 /**
  * Based on a Modular Scale using 14px and 44px as the key values
  * http://modularscale.com/scale/?px1=14&px2=44&ra1=1.618&ra2=0
- *
  **/
 
 .ms1 {
@@ -327,12 +397,6 @@ p {
 /* ------------------------------ *\
    Forms
 \* ------------------------------ */
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline-block;
-  margin-right: 5px;
-}
 
 .user-input {
   border: 1px solid #ddd;
@@ -406,6 +470,7 @@ input[type="radio"] {
 }
 
 .btn--full {
+  display: block;
   width: 100%;
 }
 
@@ -423,27 +488,39 @@ input[type="radio"] {
   padding-left: 0;
 }
 
-.list--inline li {
+.list-item--inline {
   float: left;
   margin-right: 1em;
   width: auto;
 }
 
-.list--inline__item { /* E.g. <li><a class="inline-list__item" href="#">Example</a></li> */
-  float: left;
-}
-
-.list--inline__item > li:last-child {
+.list > .list-item--inline:last-child {
   margin-right: 0;
 }
 
-.list--inline--pipe li:after {
-  content: "|";
-  margin-left: 1em;
+.list-item--stack {
+  display: block;
+  margin-bottom: 1em;
+  width: auto;
 }
 
-.list--inline--pipe > li:last-child:after {
-  content: "";
+.list > .list-item--stack:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * E.g.
+ *
+ * <ul class="list">
+ *     <li class="list-item--inline list-item--inline--pipe" data-divider="|">Something</li>
+ *     <li class="list-item--inline list-item--inline--pipe">Here</li>
+ * </ul>
+ *
+ **/
+
+.list-item--inline--pipe:after {
+  content: attr(data-divider) "";
+  margin-left: 1em;
 }
 
 /* ------------------------------ *\
@@ -482,6 +559,5 @@ input[type="radio"] {
  *
  * For example:
  *
- * .bg-grey { background-color: #eee; border: 1px solid #ddd;}
- * .text-grey { color: #999;}
+ * .grey { background-color: #eee; }
  **/
