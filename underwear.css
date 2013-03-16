@@ -121,6 +121,7 @@ a {
 
 .box {
   border: 1px solid #ddd;
+  padding: 10px;
 }
 
 .underline {
@@ -135,117 +136,109 @@ a {
    The Grid
 \* ------------------------------ */
 
-.container {
+.grid {
+  letter-spacing: -0.31em;
   margin-left: auto;
   margin-right: auto;
   width: 940px;
 }
 
-/**
- * Represents a single row in the grid.
- * Remember to tack on `.group` to clear the floats made by the columns.
- **/
-
-.row {
-  margin-left: -20px;
+.column {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-[class*="column-"] {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+.one-third {
+  width: 33.333333%;
+}
+.two-third {
+  width: 66.666666%;
 }
 
-.column-1 {
-  width: 60px;
+.one-forth {
+  width: 25%;
+}
+.two-forth {
+  width: 50%;
+}
+.three-forth {
+  width: 75%;
 }
 
-.column-2 {
-  width: 140px;
+.one-fifth {
+  width: 20%;
+}
+.two-fifth {
+  width: 40%;
+}
+.three-fifth {
+  width: 60%;
+}
+.four-fifth {
+  width: 80%;
 }
 
-.column-3 {
-  width: 220px;
+.one-tenth {
+  width: 10%;
+}
+.two-tenth {
+  width: 20%;
+}
+.three-tenth {
+  width: 30%;
+}
+.four-tenth {
+  width: 40%;
+}
+.five-tenth {
+  width: 50%;
+}
+.six-tenth {
+  width: 60%;
+}
+.seven-tenth {
+  width: 70%;
+}
+.eight-tenth {
+  width: 80%;
+}
+.nine-tenth {
+  width: 90%;
 }
 
-.column-4 {
-  width: 300px;
+.one-twelfth {
+  width: 8.333333%;
 }
-
-.column-5 {
-  width: 380px;
+.two-twelfth {
+  width: 16.666667%;
 }
-
-.column-6 {
-  width: 460px;
+.three-twelfth {
+  width: 25%;
 }
-
-.column-7 {
-  width: 540px;
+.four-twelfth {
+  width: 33.333333%;
 }
-
-.column-8 {
-  width: 620px;
+.five-twelfth {
+  width: 41.666667%;
 }
-
-.column-9 {
-  width: 700px;
+.six-twelfth {
+  width: 50%;
 }
-
-.column-10 {
-  width: 780px;
+.seven-twelfth {
+  width: 58.333333%;
 }
-
-.column-11 {
-  width: 860px;
+.eight-twelfth {
+  width: 66.666667%;
 }
-
-.column-12 {
-  width: 940px;
+.nine-twelfth {
+  width: 75%;
 }
-
-.offset-1 {
-  margin-left: 60px;
+.ten-twelfth {
+  width: 83.333333%;
 }
-
-.offset-2 {
-  margin-left: 140px;
-}
-
-.offset-3 {
-  margin-left: 220px;
-}
-
-.offset-4 {
-  margin-left: 300px;
-}
-
-.offset-5 {
-  margin-left: 380px;
-}
-
-.offset-6 {
-  margin-left: 460px;
-}
-
-.offset-7 {
-  margin-left: 540px;
-}
-
-.offset-8 {
-  margin-left: 620px;
-}
-
-.offset-9 {
-  margin-left: 700px;
-}
-
-.offset-10 {
-  margin-left: 780px;
-}
-
-.offset-11 {
-  margin-left: 860px;
+.eleven-twelfth {
+  width: 91.666666%;
 }
 
 /* ------------------------------ *\
@@ -281,8 +274,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0; /* Remove default browser margins */
+h6,
+p {
+  letter-spacing: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: .7em;
+  margin-top: .7em;
 }
 
 /**
