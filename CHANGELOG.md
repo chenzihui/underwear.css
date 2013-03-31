@@ -1,5 +1,8 @@
 == HEAD
 
+== 0.1.5 (31st March 2013)
+- Add modal dialogs
+
 == 0.1.4 (16th March 2013)
 - Remove seperate file for fluid grids
 - Change grid system to make use of percentages instead of fixed widths
