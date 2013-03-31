@@ -524,6 +524,37 @@ p {
 }
 
 /* ------------------------------ *\
+   Modal Dialogs
+\* ------------------------------ */
+
+.modal-overlay {
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 15px rgba(0,0,0,.15);
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  z-index: 1001;
+}
+
+.modal--gr {
+  height: 350px;
+  margin: -175px 0 0 -290px;
+  width: 580px;
+}
+
+/* ------------------------------ *\
    CSS3 Helpers
 \* ------------------------------ */
 
