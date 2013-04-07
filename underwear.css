@@ -189,6 +189,18 @@ a {
   word-spacing: normal;
 }
 
+.whole {
+  width: 100%;
+}
+
+/**
+ * Halves
+ **/
+
+.one-half {
+  width: 50%;
+}
+
 /**
  * Thirds
  **/
