@@ -189,6 +189,10 @@ a {
   word-spacing: normal;
 }
 
+  .column > .grid {
+    width: 100%;
+  }
+
 .whole {
   width: 100%;
 }
