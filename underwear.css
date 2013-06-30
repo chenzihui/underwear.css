@@ -48,12 +48,12 @@ body {
   margin-top: 10px;
 }
 
-.space-large {
+.space--large {
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-.space-xlarge {
+.space--xlarge {
   margin-bottom: 40px;
   margin-top: 40px;
 }
@@ -62,7 +62,7 @@ body {
   padding: 5px;
 }
 
-.breathe-large {
+.breathe--large {
   padding: 10px;
 }
 
@@ -153,7 +153,7 @@ a {
   border-bottom: 1px solid #ddd;
 }
 
-.underline-dashed {
+.underline--dashed {
   border-bottom: 1px dashed #ccc;
 }
 
