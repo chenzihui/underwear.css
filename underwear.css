@@ -71,7 +71,7 @@ body {
  **/
 
 .center-block {
-  display: block;
+  display: block !important;
   margin-left: auto;
   margin-right: auto;
 }
@@ -434,12 +434,16 @@ p {
   outline: none;
 }
 
-.form-horizontal input,
 .form-horizontal label {
+  width: 100px;
+}
+
+.form-horizontal label,
+.form-horizontal__input {
   float: left;
 }
 
-.form-horizontal input {
+.form-horizontal__input {
   margin-left: 10px;
 }
 
