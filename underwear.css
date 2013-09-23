@@ -434,11 +434,13 @@ p {
   outline: none;
 }
 
-.form-horizontal label {
+.form-horizontal__label {
+  margin-top: 5px;
+  text-align: right;
   width: 100px;
 }
 
-.form-horizontal label,
+.form-horizontal__label,
 .form-horizontal__input {
   float: left;
 }
@@ -447,16 +449,12 @@ p {
   margin-left: 10px;
 }
 
-.form-horizontal label {
-  text-align: right;
-}
-
-.form-stack label,
-.form-stack input {
+.form-stack__label,
+.form-stack__input {
   display: block;
 }
 
-.form-stack label {
+.form-stack__label {
   margin-bottom: 3px;
 }
 
