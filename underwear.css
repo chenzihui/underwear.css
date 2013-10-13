@@ -189,8 +189,16 @@ a {
   word-spacing: normal;
 }
 
-  .column > .grid {
+  .column .grid {
     width: 100%;
+  }
+
+  .column .grid .column:first-child {
+    padding-left: 0;
+  }
+
+  .column .grid .column:last-child {
+    padding-right: 0;
   }
 
 .whole {
