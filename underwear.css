@@ -430,6 +430,10 @@ p {
   padding: 8px 5px;
 }
 
+.user-input--small {
+  width: 50px;
+}
+
 .user-input--large {
   width: 200px;
 }
@@ -447,6 +451,10 @@ p {
   margin-top: 5px;
   text-align: right;
   width: 100px;
+}
+
+.form-horizontal__control {
+  margin-top: 8px;
 }
 
 .form-horizontal__label,
